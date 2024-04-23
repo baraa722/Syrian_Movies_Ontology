@@ -1,0 +1,120 @@
+{
+  "@context" : {
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "ActedBy" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#ActedBy",
+      "@type" : "@id"
+    },
+    "Director" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Director"
+    },
+    "CostInEUR" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#CostInEUR",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Produce" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Produce",
+      "@type" : "@id"
+    },
+    "ProductionYear" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#ProductionYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "PaidBy" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#PaidBy",
+      "@type" : "@id"
+    },
+    "ViewsNumber" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#ViewsNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Nationality" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Nationality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Gender" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Gender",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Person" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Person"
+    },
+    "Actor" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"
+    },
+    "Producer" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Producer"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Revenue" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Revenue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Directs" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Directs",
+      "@type" : "@id"
+    },
+    "Pay" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Pay",
+      "@type" : "@id"
+    },
+    "ActsIn" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#ActsIn",
+      "@type" : "@id"
+    },
+    "Audience" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Audience"
+    },
+    "Watched" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Watched",
+      "@type" : "@id"
+    },
+    "DirectedBy" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#DirectedBy",
+      "@type" : "@id"
+    },
+    "Duration" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Duration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "PaidFor" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#PaidFor",
+      "@type" : "@id"
+    },
+    "Movie" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"
+    },
+    "Costs" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Costs",
+      "@type" : "@id"
+    },
+    "CostInSYP" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#CostInSYP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Payment" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"
+    },
+    "Cost" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Cost",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Name" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Genre" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#Genre",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ProducedBy" : {
+      "@id" : "https://w3id.org/def/w3idorg/syrian-cinema-ontology#ProducedBy",
+      "@type" : "@id"
+    }
+  }
+}

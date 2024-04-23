@@ -1,0 +1,775 @@
+@prefix : <https://w3id.org/def/w3idorg/syrian-cinema-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/def/w3idorg/syrian-cinema-ontology#> .
+
+<https://w3id.org/def/w3idorg/syrian-cinema-ontology> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#ActedBy
+:ActedBy rdf:type owl:ObjectProperty ;
+         owl:inverseOf :ActsIn ;
+         rdfs:domain :Movie ;
+         rdfs:range :Actor .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#ActsIn
+:ActsIn rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf owl:topObjectProperty ;
+        rdfs:domain :Actor ;
+        rdfs:range :Movie .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Costs
+:Costs rdf:type owl:ObjectProperty ;
+       rdfs:domain :Movie ;
+       rdfs:range :Payment .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#DirectedBy
+:DirectedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :Directs ;
+            rdfs:domain :Movie ;
+            rdfs:range :Director .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Directs
+:Directs rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Director ;
+         rdfs:range :Movie .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#PaidBy
+:PaidBy rdf:type owl:ObjectProperty ;
+        owl:inverseOf :Pay ;
+        rdfs:domain :Payment ;
+        rdfs:range :Producer .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#PaidFor
+:PaidFor rdf:type owl:ObjectProperty ;
+         rdfs:domain :Payment ;
+         rdfs:range :Person .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Pay
+:Pay rdf:type owl:ObjectProperty ;
+     rdfs:domain :Producer ;
+     rdfs:range :Payment .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Produce
+:Produce rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         owl:inverseOf :ProducedBy ;
+         rdfs:domain :Producer ;
+         rdfs:range :Movie .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#ProducedBy
+:ProducedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Movie ;
+            rdfs:range :Producer .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Watched
+:Watched rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Audience ;
+         rdfs:range :Movie .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Cost
+:Cost rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Payment ;
+      rdfs:range xsd:integer .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#CostInEUR
+:CostInEUR rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :Cost ;
+           rdfs:domain :Payment ;
+           rdfs:range xsd:integer .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#CostInSYP
+:CostInSYP rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :Cost ;
+           rdfs:domain :Payment ;
+           rdfs:range xsd:integer .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Duration
+:Duration rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Movie ;
+          rdfs:range xsd:int .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Gender
+:Gender rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Person ;
+        rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Genre
+:Genre rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Movie ;
+       rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Name
+:Name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Person ;
+      rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Nationality
+:Nationality rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Person ;
+             rdfs:range xsd:string .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#ProductionYear
+:ProductionYear rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Movie ;
+                rdfs:range xsd:dateTime .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Revenue
+:Revenue rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :Movie ;
+         rdfs:range xsd:integer .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#ViewsNumber
+:ViewsNumber rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Movie ;
+             rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :Person .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Audience
+:Audience rdf:type owl:Class ;
+          rdfs:subClassOf :Person .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Person .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie
+:Movie rdf:type owl:Class .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment
+:Payment rdf:type owl:Class .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Person
+:Person rdf:type owl:Class .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Producer
+:Producer rdf:type owl:Class ;
+          rdfs:subClassOf :Person .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Abdellatif_Abdelhamid
+:Abdellatif_Abdelhamid rdf:type owl:NamedIndividual ,
+                                :Director ;
+                       :Directs :The_Night_Of_The_Jackal ;
+                       :Gender "Male" ;
+                       :Name "Abdellatif Abdelhamid" ;
+                       :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#AbdulRahaman_Alrahy
+:AbdulRahaman_Alrahy rdf:type owl:NamedIndividual ,
+                              :Actor ;
+                     :Gender "Male" ;
+                     :Name "AbdulRahaman_Alrahy" ;
+                     :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Adnan_Barakat
+:Adnan_Barakat rdf:type owl:NamedIndividual ;
+               :ActsIn :Al-Mugamarah ,
+                       :The_Sun_On_a_Cloudy_Day ;
+               :Gender "Male" ;
+               :Name "Adnan Barakat" ;
+               :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Ahmad_Addas
+:Ahmad_Addas rdf:type owl:NamedIndividual ,
+                      :Actor ;
+             :ActsIn :Al-Mugamarah ;
+             :Gender "Male" ;
+             :Name "Ahmad Addas" ;
+             :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Al-Mugamarah
+:Al-Mugamarah rdf:type owl:NamedIndividual ,
+                       :Movie ;
+              :ActedBy :Adnan_Barakat ,
+                       :Ahmad_Addas ,
+                       :Muna_Wassef ,
+                       :Nihad_Alaeddin ,
+                       :Oussama_Al-Roumani ;
+              :Costs :Payment_3 ,
+                     :Payment_4 ,
+                     :Payment_5 ,
+                     :Payment_6 ;
+              :DirectedBy :Muhammed_Shahin ;
+              :ProducedBy :The_General_Institute_of_Cinema ;
+              :Duration "100"^^xsd:positiveInteger ;
+              :Genre "Comedy" ;
+              :Name "Al_Mugamara" ;
+              :ProductionYear "1974-01-01T00:00:00"^^xsd:dateTime ;
+              :Revenue "3500000"^^xsd:positiveInteger ;
+              :ViewsNumber "5300000"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Asaad_Feddah
+:Asaad_Feddah rdf:type owl:NamedIndividual ,
+                       :Actor ;
+              :ActsIn :The_Night_Of_The_Jackal ;
+              :Gender "Male" ;
+              :Name "Asaad Feddah" ;
+              :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Ayman_Zidan
+:Ayman_Zidan rdf:type owl:NamedIndividual ,
+                      :Actor ;
+             :ActsIn :The_Sun_On_a_Cloudy_Day ;
+             :Gender "Male" ;
+             :Name "Ayman Zidan" ;
+             :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Bassam_Kousa
+:Bassam_Kousa rdf:type owl:NamedIndividual ,
+                       :Actor ;
+              :ActsIn :The_Night_Of_The_Jackal ;
+              :Gender "Male" ;
+              :Name "Bassam Kousa" ;
+              :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Bassam_Lotfi
+:Bassam_Lotfi rdf:type owl:NamedIndividual ,
+                       :Actor ;
+              :ActsIn :The_Dupes ;
+              :Gender "Male" ;
+              :Name "Bassam Lotfi" ;
+              :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Everyday_Life_in_a_Syrian_Village
+:Everyday_Life_in_a_Syrian_Village rdf:type owl:NamedIndividual ,
+                                            :Movie ;
+                                   :DirectedBy :Omar_Amiralay ;
+                                   :ProducedBy :The_General_Institute_of_Cinema ;
+                                   :Duration "140"^^xsd:positiveInteger ;
+                                   :Genre "Comedy" ;
+                                   :Name "Everyday Life in a Syrian Village" ;
+                                   :ProductionYear "1974-03-15T00:00:00"^^xsd:dateTime ;
+                                   :Revenue "3600000"^^xsd:positiveInteger ;
+                                   :ViewsNumber "2000000"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Jihad_Saad
+:Jihad_Saad rdf:type owl:NamedIndividual ,
+                     :Actor ;
+            :ActsIn :The_Sun_On_a_Cloudy_Day ;
+            :Gender "Male" ;
+            :Name "Jihad Saad" ;
+            :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Kafr_Kassem
+:Kafr_Kassem rdf:type owl:NamedIndividual ,
+                      :Movie ;
+             :ProducedBy :The_General_Institute_of_Cinema ;
+             :Duration "120"^^xsd:positiveInteger ;
+             :Name "Kafr Kassem" ;
+             :ProductionYear "1975-05-02T00:00:00"^^xsd:dateTime ;
+             :Revenue "2500000"^^xsd:positiveInteger ;
+             :ViewsNumber "440000"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Mohamed_Kheir_Halouani
+:Mohamed_Kheir_Halouani rdf:type owl:NamedIndividual ,
+                                 :Actor ;
+                        :ActsIn :The_Dupes ;
+                        :Gender "Male" ;
+                        :Name "Mohamed Kheir Halouani" ;
+                        :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Mohammad_Malas
+:Mohammad_Malas rdf:type owl:NamedIndividual ,
+                         :Director ;
+                :Directs :The_Dream ;
+                :Gender "Male" ;
+                :Name "Mohammad Malas" ;
+                :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muhammed_Shahin
+:Muhammed_Shahin rdf:type owl:NamedIndividual ,
+                          :Director ;
+                 :Directs :Al-Mugamarah ,
+                          :The_Sun_On_a_Cloudy_Day ;
+                 :Gender "Male" ;
+                 :Name "Muhammed Shahin" ;
+                 :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muna_Wassef
+:Muna_Wassef rdf:type owl:NamedIndividual ,
+                      :Actor ;
+             :ActsIn :Al-Mugamarah ,
+                     :The_Sun_On_a_Cloudy_Day ;
+             :Gender "Female" ;
+             :Name "Muna Wassef" ;
+             :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Najah_Al_Abdullah
+:Najah_Al_Abdullah rdf:type owl:NamedIndividual ,
+                            :Actor ;
+                   :ActsIn :The_Sun_On_a_Cloudy_Day ;
+                   :Gender "Female" ;
+                   :Name "Najah Al Abdullah" ;
+                   :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Nihad_Alaeddin
+:Nihad_Alaeddin rdf:type owl:NamedIndividual ,
+                         :Actor ;
+                :ActsIn :Al-Mugamarah ;
+                :Gender "Female" ;
+                :Name "Nihad Alaeddin" ;
+                :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Omar_Amiralay
+:Omar_Amiralay rdf:type owl:NamedIndividual ,
+                        :Director ;
+               :Directs :Everyday_Life_in_a_Syrian_Village ;
+               :Gender "Male" ;
+               :Name "Omar Amiralay" ;
+               :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Oussama_Al-Roumani
+:Oussama_Al-Roumani rdf:type owl:NamedIndividual ;
+                    :ActsIn :Al-Mugamarah ;
+                    :Gender "Male" ;
+                    :Name "Oussama Al-Roumani" ;
+                    :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_1
+:Payment_1 rdf:type owl:NamedIndividual ,
+                    :Payment ;
+           :PaidBy :The_General_Institute_of_Cinema ;
+           :PaidFor :Ahmad_Addas ;
+           :CostInEUR "5600"^^xsd:positiveInteger ;
+           :CostInSYP "5300"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_10
+:Payment_10 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :AbdulRahaman_Alrahy ;
+            :CostInEUR "2500"^^xsd:positiveInteger ;
+            :CostInSYP "2800"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_11
+:Payment_11 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Mohamed_Kheir_Halouani ;
+            :CostInEUR "2900"^^xsd:positiveInteger ;
+            :CostInSYP "3200"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_12
+:Payment_12 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Adnan_Barakat ;
+            :CostInEUR "1500"^^xsd:positiveInteger ;
+            :CostInSYP "1900"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_13
+:Payment_13 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Tolay_Haroon ;
+            :CostInEUR "1200"^^xsd:positiveInteger ;
+            :CostInSYP "1500"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_14
+:Payment_14 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Najah_Al_Abdullah ;
+            :CostInEUR "2300"^^xsd:positiveInteger ;
+            :CostInSYP "2600"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_15
+:Payment_15 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Asaad_Feddah ;
+            :CostInEUR "1200"^^xsd:positiveInteger ;
+            :CostInSYP "1500"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_16
+:Payment_16 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Bassam_Kousa ;
+            :CostInEUR "6100"^^xsd:positiveInteger ;
+            :CostInSYP "6400"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_17
+:Payment_17 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Abdellatif_Abdelhamid .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_18
+:Payment_18 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Jihad_Saad ;
+            :CostInEUR "2400"^^xsd:positiveInteger ;
+            :CostInSYP "2700"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_19
+:Payment_19 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Ayman_Zidan ;
+            :CostInEUR "6000"^^xsd:positiveInteger ;
+            :CostInSYP "6300"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_2
+:Payment_2 rdf:type owl:NamedIndividual ,
+                    :Payment ;
+           :PaidBy :The_General_Institute_of_Cinema ;
+           :PaidFor :Nihad_Alaeddin ;
+           :CostInEUR "5300"^^xsd:positiveInteger ;
+           :CostInSYP "5000"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_20
+:Payment_20 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Wafaa_El_Mowisly ;
+            :CostInEUR "1200"^^xsd:positiveInteger ;
+            :CostInSYP "1500"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_21
+:Payment_21 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Adnan_Barakat ;
+            :CostInEUR "4200"^^xsd:positiveInteger ;
+            :CostInSYP "4600"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_22
+:Payment_22 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Muhammed_Shahin ;
+            :CostInEUR "3200"^^xsd:positiveInteger ;
+            :CostInSYP "3500"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_23
+:Payment_23 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Najah_Al_Abdullah ;
+            :CostInEUR "1200"^^xsd:positiveInteger ;
+            :CostInSYP "1500"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_24
+:Payment_24 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Muna_Wassef ;
+            :CostInEUR "700"^^xsd:positiveInteger ;
+            :CostInSYP "1000"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_25
+:Payment_25 rdf:type owl:NamedIndividual ,
+                     :Payment ;
+            :PaidBy :The_General_Institute_of_Cinema ;
+            :PaidFor :Yusuf_Hanna ;
+            :CostInEUR "1600"^^xsd:positiveInteger ;
+            :CostInSYP "1900"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_3
+:Payment_3 rdf:type owl:NamedIndividual ,
+                    :Payment ;
+           :PaidBy :The_General_Institute_of_Cinema ;
+           :PaidFor :Adnan_Barakat ;
+           :CostInEUR "9000"^^xsd:positiveInteger ;
+           :CostInSYP "9300"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_4
+:Payment_4 rdf:type owl:NamedIndividual ,
+                    :Payment ;
+           :PaidBy :The_General_Institute_of_Cinema ;
+           :PaidFor :Muhammed_Shahin ;
+           :CostInEUR "9300"^^xsd:positiveInteger ;
+           :CostInSYP "9650"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_5
+:Payment_5 rdf:type owl:NamedIndividual ,
+                    :Payment ;
+           :PaidBy :The_General_Institute_of_Cinema ;
+           :PaidFor :Muna_Wassef ;
+           :CostInEUR "8800"^^xsd:positiveInteger ;
+           :CostInSYP "9200"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_6
+:Payment_6 rdf:type owl:NamedIndividual ,
+                    :Payment ;
+           :PaidBy :The_General_Institute_of_Cinema ;
+           :PaidFor :Oussama_Al-Roumani ;
+           :CostInEUR "6300"^^xsd:positiveInteger ;
+           :CostInSYP "6800"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_7
+:Payment_7 rdf:type owl:NamedIndividual ,
+                    :Payment ;
+           :PaidBy :The_General_Institute_of_Cinema ;
+           :PaidFor :Mohammad_Malas ;
+           :CostInEUR "7100"^^xsd:positiveInteger ;
+           :CostInSYP "7500"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_8
+:Payment_8 rdf:type owl:NamedIndividual ,
+                    :Payment ;
+           :PaidBy :The_General_Institute_of_Cinema ;
+           :PaidFor :Bassam_Lotfi ;
+           :CostInEUR "4300"^^xsd:positiveInteger ;
+           :CostInSYP "4800"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_9
+:Payment_9 rdf:type owl:NamedIndividual ,
+                    :Payment ;
+           :PaidBy :The_General_Institute_of_Cinema ;
+           :PaidFor :Tewfik_Saleh ;
+           :CostInEUR "2100"^^xsd:positiveInteger ;
+           :CostInSYP "2500"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Tewfik_Saleh
+:Tewfik_Saleh rdf:type owl:NamedIndividual ,
+                       :Director ;
+              :Directs :The_Dupes ;
+              :Gender "Male" ;
+              :Name "Tewfik Saleh" ;
+              :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Dream
+:The_Dream rdf:type owl:NamedIndividual ,
+                    :Movie ;
+           :Costs :Payment_7 ;
+           :DirectedBy :Mohammad_Malas ;
+           :ProducedBy :The_General_Institute_of_Cinema ;
+           :Duration "102"^^xsd:positiveInteger ;
+           :Genre "Documentary" ;
+           :Name "The Dream" ;
+           :ProductionYear "1987-09-23T00:00:00"^^xsd:dateTime ;
+           :Revenue "8200000"^^xsd:positiveInteger ;
+           :ViewsNumber "547055"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Dupes
+:The_Dupes rdf:type owl:NamedIndividual ,
+                    :Movie ;
+           :ActedBy :AbdulRahaman_Alrahy ,
+                    :Adnan_Barakat ,
+                    :Bassam_Lotfi ,
+                    :Mohamed_Kheir_Halouani ;
+           :DirectedBy :Tewfik_Saleh ;
+           :ProducedBy :The_General_Institute_of_Cinema ;
+           :Duration "120"^^xsd:positiveInteger ;
+           :Genre "Drama" ;
+           :Name "The Dupes" ;
+           :ProductionYear "1972-09-23T00:00:00"^^xsd:dateTime ;
+           :Revenue "9600000"^^xsd:positiveInteger ;
+           :ViewsNumber "3100561"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema
+:The_General_Institute_of_Cinema rdf:type owl:NamedIndividual ,
+                                          :Producer .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Night_Of_The_Jackal
+:The_Night_Of_The_Jackal rdf:type owl:NamedIndividual ,
+                                  :Movie ;
+                         :ActedBy :Asaad_Feddah ,
+                                  :Bassam_Kousa ,
+                                  :Najah_Al_Abdullah ,
+                                  :Tolay_Haroon ;
+                         :Costs :Payment_13 ,
+                                :Payment_14 ,
+                                :Payment_15 ,
+                                :Payment_16 ,
+                                :Payment_17 ;
+                         :DirectedBy :Abdellatif_Abdelhamid ;
+                         :ProducedBy :The_General_Institute_of_Cinema ;
+                         :Duration "120"^^xsd:positiveInteger ;
+                         :Genre "Drama" ;
+                         :Name "The Night of the jackal" ;
+                         :Revenue "1200000"^^xsd:positiveInteger ;
+                         :ViewsNumber "790000"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Sun_On_a_Cloudy_Day
+:The_Sun_On_a_Cloudy_Day rdf:type owl:NamedIndividual ,
+                                  :Movie ;
+                         :ActedBy :Adnan_Barakat ,
+                                  :Ayman_Zidan ,
+                                  :Jihad_Saad ,
+                                  :Muna_Wassef ,
+                                  :Najah_Al_Abdullah ,
+                                  :Wafaa_El_Mowisly ,
+                                  :Yusuf_Hanna ;
+                         :Costs :Payment_18 ,
+                                :Payment_19 ,
+                                :Payment_20 ,
+                                :Payment_21 ,
+                                :Payment_22 ,
+                                :Payment_23 ,
+                                :Payment_24 ,
+                                :Payment_25 ;
+                         :DirectedBy :Muhammed_Shahin ;
+                         :ProducedBy :The_General_Institute_of_Cinema ;
+                         :Duration "120"^^xsd:positiveInteger ;
+                         :Genre "Drama" ,
+                                "History" ;
+                         :Name "The Sun on a Cloudy Day" ;
+                         :ProductionYear "1985-09-03T00:00:00"^^xsd:dateTime ;
+                         :ViewsNumber "580000"^^xsd:positiveInteger .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Tolay_Haroon
+:Tolay_Haroon rdf:type owl:NamedIndividual ,
+                       :Actor ;
+              :ActsIn :The_Night_Of_The_Jackal ;
+              :Gender "Female" ;
+              :Name "Tolay Haroon" ;
+              :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Wafaa_El_Mowisly
+:Wafaa_El_Mowisly rdf:type owl:NamedIndividual ,
+                           :Actor ;
+                  :ActsIn :The_Sun_On_a_Cloudy_Day ;
+                  :Gender "Female" ;
+                  :Name "Wafaa El Mowisly" ;
+                  :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#Yusuf_Hanna
+:Yusuf_Hanna rdf:type owl:NamedIndividual ,
+                      :Actor ;
+             :ActsIn :The_Sun_On_a_Cloudy_Day ;
+             :Gender "Male" ;
+             :Name "Yusuf Hanna" ;
+             :Nationality "Syrian Nationality" .
+
+
+###  https://w3id.org/def/w3idorg/syrian-cinema-ontology#I'd_Die_Twice_and_Love_You
+<https://w3id.org/def/w3idorg/syrian-cinema-ontology#I'd_Die_Twice_and_Love_You> rdf:type owl:NamedIndividual ,
+                                                                                          :Movie ;
+                                                                                 :ProducedBy :The_General_Institute_of_Cinema ;
+                                                                                 :Duration "120"^^xsd:positiveInteger ;
+                                                                                 :Genre "Comedy" ;
+                                                                                 :Name "I'd Die Twice and Love You" ;
+                                                                                 :ProductionYear "1976-04-23T00:00:00"^^xsd:dateTime ;
+                                                                                 :Revenue "2600000"^^xsd:positiveInteger ;
+                                                                                 :ViewsNumber "420000"^^xsd:positiveInteger .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Actor
+                :Audience
+                :Director
+                :Movie
+                :Producer
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

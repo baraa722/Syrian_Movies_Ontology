@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "syrian-cinema-ontology:Producer" "syrian-cinema-ontology:Person" "syrian-cinema-ontology:Director" "syrian-cinema-ontology:Audience" "syrian-cinema-ontology:Actor" ; /*classes style*/
+	"syrian-cinema-ontology:Producer" -> "syrian-cinema-ontology:Person" [ label = "rdfs:subClassOf" ];
+	"syrian-cinema-ontology:Audience" -> "syrian-cinema-ontology:Person" [ label = "rdfs:subClassOf" ];
+	"syrian-cinema-ontology:Actor" -> "syrian-cinema-ontology:Person" [ label = "rdfs:subClassOf" ];
+	"syrian-cinema-ontology:Director" -> "syrian-cinema-ontology:Person" [ label = "rdfs:subClassOf" ];
+
+}
