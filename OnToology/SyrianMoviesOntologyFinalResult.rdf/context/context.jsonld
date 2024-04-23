@@ -1,0 +1,120 @@
+{
+  "@context" : {
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "ActedBy" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy",
+      "@type" : "@id"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"
+    },
+    "CostInEUR" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Produce" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Produce",
+      "@type" : "@id"
+    },
+    "ProductionYear" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "PaidBy" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy",
+      "@type" : "@id"
+    },
+    "ViewsNumber" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Nationality" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Gender" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+    },
+    "Producer" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Revenue" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Directs" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs",
+      "@type" : "@id"
+    },
+    "Pay" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Pay",
+      "@type" : "@id"
+    },
+    "ActsIn" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn",
+      "@type" : "@id"
+    },
+    "Audience" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience"
+    },
+    "Watched" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Watched",
+      "@type" : "@id"
+    },
+    "DirectedBy" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy",
+      "@type" : "@id"
+    },
+    "Duration" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "PaidFor" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor",
+      "@type" : "@id"
+    },
+    "Movie" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+    },
+    "Costs" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs",
+      "@type" : "@id"
+    },
+    "CostInSYP" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Payment" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+    },
+    "Cost" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Name" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Genre" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ProducedBy" : {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy",
+      "@type" : "@id"
+    }
+  }
+}
