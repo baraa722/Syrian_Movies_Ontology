@@ -1,0 +1,1065 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData/"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:SyrianCinemaData="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#"
+     xmlns:syrian-cinema-ontology="https://w3id.org/def/w3idorg/syrian-cinema-ontology#">
+    <owl:Ontology rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#ActedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#ActedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#ActsIn"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#ActsIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#ActsIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Costs -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Costs">
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#DirectedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#DirectedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Directs"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Directs -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Directs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Director"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#PaidBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#PaidBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Pay"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Producer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#PaidFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#PaidFor">
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Pay -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Pay">
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Producer"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Produce -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Produce">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#ProducedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Producer"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#ProducedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#ProducedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Producer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Watched -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Watched">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Audience"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Cost -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Cost">
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#CostInEUR -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#CostInEUR">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Cost"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#CostInSYP -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#CostInSYP">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Cost"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Duration -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Gender -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Gender">
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Genre -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Genre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Name -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Name">
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Nationality -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Nationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#ProductionYear -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#ProductionYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Revenue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Revenue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#ViewsNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#ViewsNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor -->
+
+    <owl:Class rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Audience -->
+
+    <owl:Class rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Audience">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Director -->
+
+    <owl:Class rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Director">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie -->
+
+    <owl:Class rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment -->
+
+    <owl:Class rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Person -->
+
+    <owl:Class rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Person"/>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Producer -->
+
+    <owl:Class rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Producer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Abdellatif_Abdelhamid -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Abdellatif_Abdelhamid">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Director"/>
+        <syrian-cinema-ontology:Directs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Night_Of_The_Jackal"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Abdellatif Abdelhamid</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#AbdulRahaman_Alrahy -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#AbdulRahaman_Alrahy">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>AbdulRahaman_Alrahy</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Adnan_Barakat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Adnan_Barakat">
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Al-Mugamarah"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Sun_On_a_Cloudy_Day"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Adnan Barakat</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Ahmad_Addas -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Ahmad_Addas">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Al-Mugamarah"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Ahmad Addas</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Al-Mugamarah -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Al-Mugamarah">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Adnan_Barakat"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Ahmad_Addas"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muna_Wassef"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Nihad_Alaeddin"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Oussama_Al-Roumani"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_3"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_4"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_5"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_6"/>
+        <syrian-cinema-ontology:DirectedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muhammed_Shahin"/>
+        <syrian-cinema-ontology:ProducedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">100</syrian-cinema-ontology:Duration>
+        <syrian-cinema-ontology:Genre>Comedy</syrian-cinema-ontology:Genre>
+        <syrian-cinema-ontology:Name>Al_Mugamara</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1974-01-01T00:00:00</syrian-cinema-ontology:ProductionYear>
+        <syrian-cinema-ontology:Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3500000</syrian-cinema-ontology:Revenue>
+        <syrian-cinema-ontology:ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5300000</syrian-cinema-ontology:ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Asaad_Feddah -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Asaad_Feddah">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Night_Of_The_Jackal"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Asaad Feddah</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Ayman_Zidan -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Ayman_Zidan">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Sun_On_a_Cloudy_Day"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Ayman Zidan</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Bassam_Kousa -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Bassam_Kousa">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Night_Of_The_Jackal"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Bassam Kousa</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Bassam_Lotfi -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Bassam_Lotfi">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Dupes"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Bassam Lotfi</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Everyday_Life_in_a_Syrian_Village -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Everyday_Life_in_a_Syrian_Village">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <syrian-cinema-ontology:DirectedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Omar_Amiralay"/>
+        <syrian-cinema-ontology:ProducedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">140</syrian-cinema-ontology:Duration>
+        <syrian-cinema-ontology:Genre>Comedy</syrian-cinema-ontology:Genre>
+        <syrian-cinema-ontology:Name>Everyday Life in a Syrian Village</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1974-03-15T00:00:00</syrian-cinema-ontology:ProductionYear>
+        <syrian-cinema-ontology:Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3600000</syrian-cinema-ontology:Revenue>
+        <syrian-cinema-ontology:ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2000000</syrian-cinema-ontology:ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Jihad_Saad -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Jihad_Saad">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Sun_On_a_Cloudy_Day"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Jihad Saad</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Kafr_Kassem -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Kafr_Kassem">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <syrian-cinema-ontology:ProducedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">120</syrian-cinema-ontology:Duration>
+        <syrian-cinema-ontology:Name>Kafr Kassem</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1975-05-02T00:00:00</syrian-cinema-ontology:ProductionYear>
+        <syrian-cinema-ontology:Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2500000</syrian-cinema-ontology:Revenue>
+        <syrian-cinema-ontology:ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">440000</syrian-cinema-ontology:ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Mohamed_Kheir_Halouani -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Mohamed_Kheir_Halouani">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Dupes"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Mohamed Kheir Halouani</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Mohammad_Malas -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Mohammad_Malas">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Director"/>
+        <syrian-cinema-ontology:Directs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Dream"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Mohammad Malas</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muhammed_Shahin -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muhammed_Shahin">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Director"/>
+        <syrian-cinema-ontology:Directs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Al-Mugamarah"/>
+        <syrian-cinema-ontology:Directs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Sun_On_a_Cloudy_Day"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Muhammed Shahin</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muna_Wassef -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muna_Wassef">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Al-Mugamarah"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Sun_On_a_Cloudy_Day"/>
+        <syrian-cinema-ontology:Gender>Female</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Muna Wassef</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Najah_Al_Abdullah -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Najah_Al_Abdullah">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Sun_On_a_Cloudy_Day"/>
+        <syrian-cinema-ontology:Gender>Female</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Najah Al Abdullah</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Nihad_Alaeddin -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Nihad_Alaeddin">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Al-Mugamarah"/>
+        <syrian-cinema-ontology:Gender>Female</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Nihad Alaeddin</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Omar_Amiralay -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Omar_Amiralay">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Director"/>
+        <syrian-cinema-ontology:Directs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Everyday_Life_in_a_Syrian_Village"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Omar Amiralay</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Oussama_Al-Roumani -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Oussama_Al-Roumani">
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Al-Mugamarah"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Oussama Al-Roumani</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_1">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Ahmad_Addas"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5600</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5300</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_10 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_10">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#AbdulRahaman_Alrahy"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2500</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2800</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_11 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_11">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Mohamed_Kheir_Halouani"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2900</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3200</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_12 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_12">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Adnan_Barakat"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1500</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1900</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_13 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_13">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Tolay_Haroon"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1200</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1500</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_14 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_14">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Najah_Al_Abdullah"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2300</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2600</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_15 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_15">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Asaad_Feddah"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1200</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1500</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_16 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_16">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Bassam_Kousa"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6100</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6400</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_17 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_17">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Abdellatif_Abdelhamid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_18 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_18">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Jihad_Saad"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2400</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2700</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_19 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_19">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Ayman_Zidan"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6000</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6300</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_2">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Nihad_Alaeddin"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5300</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5000</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_20 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_20">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Wafaa_El_Mowisly"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1200</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1500</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_21 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_21">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Adnan_Barakat"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4200</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4600</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_22 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_22">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muhammed_Shahin"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3200</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3500</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_23 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_23">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Najah_Al_Abdullah"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1200</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1500</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_24 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_24">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muna_Wassef"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">700</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1000</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_25 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_25">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Yusuf_Hanna"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1600</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1900</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_3">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Adnan_Barakat"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9000</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9300</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_4">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muhammed_Shahin"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9300</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9650</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_5">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muna_Wassef"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8800</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9200</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_6">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Oussama_Al-Roumani"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6300</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6800</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_7">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Mohammad_Malas"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7100</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7500</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_8">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Bassam_Lotfi"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4300</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4800</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_9 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_9">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment"/>
+        <syrian-cinema-ontology:PaidBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:PaidFor rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Tewfik_Saleh"/>
+        <syrian-cinema-ontology:CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2100</syrian-cinema-ontology:CostInEUR>
+        <syrian-cinema-ontology:CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2500</syrian-cinema-ontology:CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Tewfik_Saleh -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Tewfik_Saleh">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Director"/>
+        <syrian-cinema-ontology:Directs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Dupes"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Tewfik Saleh</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Dream -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Dream">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_7"/>
+        <syrian-cinema-ontology:DirectedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Mohammad_Malas"/>
+        <syrian-cinema-ontology:ProducedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">102</syrian-cinema-ontology:Duration>
+        <syrian-cinema-ontology:Genre>Documentary</syrian-cinema-ontology:Genre>
+        <syrian-cinema-ontology:Name>The Dream</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-09-23T00:00:00</syrian-cinema-ontology:ProductionYear>
+        <syrian-cinema-ontology:Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8200000</syrian-cinema-ontology:Revenue>
+        <syrian-cinema-ontology:ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">547055</syrian-cinema-ontology:ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Dupes -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Dupes">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#AbdulRahaman_Alrahy"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Adnan_Barakat"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Bassam_Lotfi"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Mohamed_Kheir_Halouani"/>
+        <syrian-cinema-ontology:DirectedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Tewfik_Saleh"/>
+        <syrian-cinema-ontology:ProducedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">120</syrian-cinema-ontology:Duration>
+        <syrian-cinema-ontology:Genre>Drama</syrian-cinema-ontology:Genre>
+        <syrian-cinema-ontology:Name>The Dupes</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1972-09-23T00:00:00</syrian-cinema-ontology:ProductionYear>
+        <syrian-cinema-ontology:Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9600000</syrian-cinema-ontology:Revenue>
+        <syrian-cinema-ontology:ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3100561</syrian-cinema-ontology:ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Producer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Night_Of_The_Jackal -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Night_Of_The_Jackal">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Asaad_Feddah"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Bassam_Kousa"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Najah_Al_Abdullah"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Tolay_Haroon"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_13"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_14"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_15"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_16"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_17"/>
+        <syrian-cinema-ontology:DirectedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Abdellatif_Abdelhamid"/>
+        <syrian-cinema-ontology:ProducedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">120</syrian-cinema-ontology:Duration>
+        <syrian-cinema-ontology:Genre>Drama</syrian-cinema-ontology:Genre>
+        <syrian-cinema-ontology:Name>The Night of the jackal</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1200000</syrian-cinema-ontology:Revenue>
+        <syrian-cinema-ontology:ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">790000</syrian-cinema-ontology:ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Sun_On_a_Cloudy_Day -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Sun_On_a_Cloudy_Day">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Adnan_Barakat"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Ayman_Zidan"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Jihad_Saad"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muna_Wassef"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Najah_Al_Abdullah"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Wafaa_El_Mowisly"/>
+        <syrian-cinema-ontology:ActedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Yusuf_Hanna"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_18"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_19"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_20"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_21"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_22"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_23"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_24"/>
+        <syrian-cinema-ontology:Costs rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Payment_25"/>
+        <syrian-cinema-ontology:DirectedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Muhammed_Shahin"/>
+        <syrian-cinema-ontology:ProducedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">120</syrian-cinema-ontology:Duration>
+        <syrian-cinema-ontology:Genre>Drama</syrian-cinema-ontology:Genre>
+        <syrian-cinema-ontology:Genre>History</syrian-cinema-ontology:Genre>
+        <syrian-cinema-ontology:Name>The Sun on a Cloudy Day</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1985-09-03T00:00:00</syrian-cinema-ontology:ProductionYear>
+        <syrian-cinema-ontology:ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">580000</syrian-cinema-ontology:ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Tolay_Haroon -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Tolay_Haroon">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Night_Of_The_Jackal"/>
+        <syrian-cinema-ontology:Gender>Female</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Tolay Haroon</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Wafaa_El_Mowisly -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Wafaa_El_Mowisly">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Sun_On_a_Cloudy_Day"/>
+        <syrian-cinema-ontology:Gender>Female</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Wafaa El Mowisly</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#Yusuf_Hanna -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Yusuf_Hanna">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+        <syrian-cinema-ontology:ActsIn rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_Sun_On_a_Cloudy_Day"/>
+        <syrian-cinema-ontology:Gender>Male</syrian-cinema-ontology:Gender>
+        <syrian-cinema-ontology:Name>Yusuf Hanna</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:Nationality>Syrian Nationality</syrian-cinema-ontology:Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/w3idorg/syrian-cinema-ontology#I&apos;d_Die_Twice_and_Love_You -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#I&apos;d_Die_Twice_and_Love_You">
+        <rdf:type rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+        <syrian-cinema-ontology:ProducedBy rdf:resource="https://w3id.org/def/w3idorg/syrian-cinema-ontology#The_General_Institute_of_Cinema"/>
+        <syrian-cinema-ontology:Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">120</syrian-cinema-ontology:Duration>
+        <syrian-cinema-ontology:Genre>Comedy</syrian-cinema-ontology:Genre>
+        <syrian-cinema-ontology:Name>I&apos;d Die Twice and Love You</syrian-cinema-ontology:Name>
+        <syrian-cinema-ontology:ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1976-04-23T00:00:00</syrian-cinema-ontology:ProductionYear>
+        <syrian-cinema-ontology:Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2600000</syrian-cinema-ontology:Revenue>
+        <syrian-cinema-ontology:ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">420000</syrian-cinema-ontology:ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Actor"/>
+            <rdf:Description rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Audience"/>
+            <rdf:Description rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Director"/>
+            <rdf:Description rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Movie"/>
+            <rdf:Description rdf:about="https://w3id.org/def/w3idorg/syrian-cinema-ontology#Producer"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
