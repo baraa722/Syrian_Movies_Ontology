@@ -1,0 +1,1154 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:SyrianCinemaData="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Pay"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Pay -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Pay">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Produce -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Produce">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Watched -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Watched">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"/>
+        <Directs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal"/>
+        <Gender>Male</Gender>
+        <Name>Abdellatif Abdelhamid</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <Gender>Male</Gender>
+        <Name>AbdulRahaman_Alrahy</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat">
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"/>
+        <Gender>Male</Gender>
+        <Name>Adnan Barakat</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah"/>
+        <Gender>Male</Gender>
+        <Name>Ahmad Addas</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6"/>
+        <DirectedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin"/>
+        <ProducedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">100</Duration>
+        <Genre>Comedy</Genre>
+        <Name>Al_Mugamara</Name>
+        <ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1974-01-01T00:00:00</ProductionYear>
+        <Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3500000</Revenue>
+        <ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5300000</ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal"/>
+        <Gender>Male</Gender>
+        <Name>Asaad Feddah</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"/>
+        <Gender>Male</Gender>
+        <Name>Ayman Zidan</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal"/>
+        <Gender>Male</Gender>
+        <Name>Bassam Kousa</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes"/>
+        <Gender>Male</Gender>
+        <Name>Bassam Lotfi</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <DirectedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay"/>
+        <ProducedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">140</Duration>
+        <Genre>Comedy</Genre>
+        <Name>Everyday Life in a Syrian Village</Name>
+        <ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1974-03-15T00:00:00</ProductionYear>
+        <Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3600000</Revenue>
+        <ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2000000</ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"/>
+        <Gender>Male</Gender>
+        <Name>Jihad Saad</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Kafr_Kassem -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Kafr_Kassem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <ProducedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">120</Duration>
+        <Name>Kafr Kassem</Name>
+        <ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1975-05-02T00:00:00</ProductionYear>
+        <Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2500000</Revenue>
+        <ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">440000</ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes"/>
+        <Gender>Male</Gender>
+        <Name>Mohamed Kheir Halouani</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"/>
+        <Directs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream"/>
+        <Gender>Male</Gender>
+        <Name>Mohammad Malas</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"/>
+        <Directs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah"/>
+        <Directs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"/>
+        <Gender>Male</Gender>
+        <Name>Muhammed Shahin</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"/>
+        <Gender>Female</Gender>
+        <Name>Muna Wassef</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"/>
+        <Gender>Female</Gender>
+        <Name>Najah Al Abdullah</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah"/>
+        <Gender>Female</Gender>
+        <Name>Nihad Alaeddin</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"/>
+        <Directs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village"/>
+        <Gender>Male</Gender>
+        <Name>Omar Amiralay</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani">
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah"/>
+        <Gender>Male</Gender>
+        <Name>Oussama Al-Roumani</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5600</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5300</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_10 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2500</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2800</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_11 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2900</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3200</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_12 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1500</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1900</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1200</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1500</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2300</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2600</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1200</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1500</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6100</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6400</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_17 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2400</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2700</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6000</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6300</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5300</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5000</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1200</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1500</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4200</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4600</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3200</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3500</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1200</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1500</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">700</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1000</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1600</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1900</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9000</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9300</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9300</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9650</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8800</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9200</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6300</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6800</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7100</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7500</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_8 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4300</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4800</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_9 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"/>
+        <PaidBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <PaidFor rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh"/>
+        <CostInEUR rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2100</CostInEUR>
+        <CostInSYP rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2500</CostInSYP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"/>
+        <Directs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes"/>
+        <Gender>Male</Gender>
+        <Name>Tewfik Saleh</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7"/>
+        <DirectedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas"/>
+        <ProducedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">102</Duration>
+        <Genre>Documentary</Genre>
+        <Name>The Dream</Name>
+        <ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-09-23T00:00:00</ProductionYear>
+        <Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">8200000</Revenue>
+        <ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">547055</ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani"/>
+        <DirectedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh"/>
+        <ProducedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">120</Duration>
+        <Genre>Drama</Genre>
+        <Name>The Dupes</Name>
+        <ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1972-09-23T00:00:00</ProductionYear>
+        <Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9600000</Revenue>
+        <ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3100561</ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_17"/>
+        <DirectedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid"/>
+        <ProducedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">120</Duration>
+        <Genre>Drama</Genre>
+        <Name>The Night of the jackal</Name>
+        <Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1200000</Revenue>
+        <ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">790000</ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly"/>
+        <ActedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24"/>
+        <Costs rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25"/>
+        <DirectedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin"/>
+        <ProducedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">120</Duration>
+        <Genre>Drama</Genre>
+        <Genre>History</Genre>
+        <Name>The Sun on a Cloudy Day</Name>
+        <ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1985-09-03T00:00:00</ProductionYear>
+        <ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">580000</ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal"/>
+        <Gender>Female</Gender>
+        <Name>Tolay Haroon</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"/>
+        <Gender>Female</Gender>
+        <Name>Wafaa El Mowisly</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+        <ActsIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"/>
+        <Gender>Male</Gender>
+        <Name>Yusuf Hanna</Name>
+        <Nationality>Syrian Nationality</Nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I&apos;d_Die_Twice_and_Love_You -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I&apos;d_Die_Twice_and_Love_You">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+        <ProducedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"/>
+        <Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">120</Duration>
+        <Genre>Comedy</Genre>
+        <Name>I&apos;d Die Twice and Love You</Name>
+        <ProductionYear rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1976-04-23T00:00:00</ProductionYear>
+        <Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2600000</Revenue>
+        <ViewsNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">420000</ViewsNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

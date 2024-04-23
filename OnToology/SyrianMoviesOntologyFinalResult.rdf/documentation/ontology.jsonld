@@ -1,0 +1,1510 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+    }, {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience"
+    }, {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"
+    }, {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+    }, {
+      "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Abdellatif Abdelhamid"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "AbdulRahaman_Alrahy"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Adnan Barakat"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Ahmad Addas"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "100"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre" : [ {
+    "@value" : "Comedy"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Al_Mugamara"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1974-01-01T00:00:00"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "3500000"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "5300000"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Asaad Feddah"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Ayman Zidan"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Bassam Kousa"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Bassam Lotfi"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "140"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre" : [ {
+    "@value" : "Comedy"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Everyday Life in a Syrian Village"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1974-03-15T00:00:00"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "3600000"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2000000"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I'd_Die_Twice_and_Love_You",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "120"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre" : [ {
+    "@value" : "Comedy"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "I'd Die Twice and Love You"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1976-04-23T00:00:00"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2600000"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "420000"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Jihad Saad"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Kafr_Kassem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "120"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Kafr Kassem"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1975-05-02T00:00:00"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2500000"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "440000"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Mohamed Kheir Halouani"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Mohammad Malas"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Muhammed Shahin"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Muna Wassef"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Najah Al Abdullah"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Nihad Alaeddin"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Omar Amiralay"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Oussama Al-Roumani"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Pay"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Pay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "5600"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "5300"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2500"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2800"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2900"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "3200"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1500"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1900"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1200"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1500"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2300"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2600"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1200"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1500"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "6100"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "6400"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2400"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2700"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "6000"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "6300"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "5300"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "5000"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1200"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1500"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "4200"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "4600"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "3200"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "3500"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1200"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1500"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "700"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1000"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1600"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1900"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "9000"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "9300"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "9300"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "9650"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "8800"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "9200"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "6300"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "6800"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "7100"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "7500"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "4300"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "4800"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2100"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "2500"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Produce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Tewfik Saleh"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "102"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre" : [ {
+    "@value" : "Documentary"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "The Dream"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1987-09-23T00:00:00"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "8200000"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "547055"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "120"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre" : [ {
+    "@value" : "Drama"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "The Dupes"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1972-09-23T00:00:00"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "9600000"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "3100561"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_17"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "120"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre" : [ {
+    "@value" : "Drama"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "The Night of the jackal"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "1200000"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "790000"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24"
+  }, {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "120"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre" : [ {
+    "@value" : "Drama"
+  }, {
+    "@value" : "History"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "The Sun on a Cloudy Day"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "1985-09-03T00:00:00"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "580000"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Tolay Haroon"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Wafaa El Mowisly"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Watched",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name" : [ {
+    "@value" : "Yusuf Hanna"
+  } ],
+  "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality" : [ {
+    "@value" : "Syrian Nationality"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor"
+  } ]
+} ]

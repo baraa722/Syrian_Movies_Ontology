@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "SyrianCinemaData:Producer" "SyrianCinemaData:Person" "SyrianCinemaData:Director" "SyrianCinemaData:Audience" "SyrianCinemaData:Actor" ; /*classes style*/
+	"SyrianCinemaData:Producer" -> "SyrianCinemaData:Person" [ label = "rdfs:subClassOf" ];
+	"SyrianCinemaData:Director" -> "SyrianCinemaData:Person" [ label = "rdfs:subClassOf" ];
+	"SyrianCinemaData:Audience" -> "SyrianCinemaData:Person" [ label = "rdfs:subClassOf" ];
+	"SyrianCinemaData:Actor" -> "SyrianCinemaData:Person" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,715 @@
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Pay> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Pay
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Pay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Pay> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Pay> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Produce
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Produce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Produce> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Produce> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Produce> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Produce> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Watched
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Watched> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Watched> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Watched> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Watched> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Cost> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Person> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Abdellatif Abdelhamid" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "AbdulRahaman_Alrahy" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Adnan Barakat" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Ahmad Addas" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration> "100"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre> "Comedy" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Al_Mugamara" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear> "1974-01-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue> "3500000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber> "5300000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Asaad Feddah" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Ayman Zidan" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Bassam Kousa" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Bassam Lotfi" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration> "140"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre> "Comedy" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Everyday Life in a Syrian Village" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear> "1974-03-15T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue> "3600000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber> "2000000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Jihad Saad" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Kafr_Kassem
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Kafr_Kassem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Kafr_Kassem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Kafr_Kassem> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Kafr_Kassem> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration> "120"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Kafr_Kassem> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Kafr Kassem" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Kafr_Kassem> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear> "1975-05-02T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Kafr_Kassem> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue> "2500000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Kafr_Kassem> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber> "440000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Mohamed Kheir Halouani" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Mohammad Malas" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Muhammed Shahin" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Female" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Muna Wassef" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Female" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Najah Al Abdullah" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Female" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Nihad Alaeddin" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Everyday_Life_in_a_Syrian_Village> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Omar Amiralay" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Omar_Amiralay> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Al-Mugamarah> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Oussama Al-Roumani" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_1
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_1> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_1> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ahmad_Addas> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_1> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "5600"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_1> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "5300"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_10
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_10> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_10> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_10> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "2500"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_10> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "2800"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_11
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_11> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_11> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_11> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "2900"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_11> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "3200"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_12
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_12> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_12> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_12> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "1500"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_12> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "1900"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "1200"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "1500"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "2300"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "2600"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "1200"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "1500"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "6100"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "6400"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_17
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_17> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_17> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "2400"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "2700"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "6000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "6300"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_2
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_2> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_2> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nihad_Alaeddin> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_2> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "5300"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_2> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "5000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "1200"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "1500"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "4200"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "4600"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "3200"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "3500"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "1200"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "1500"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "700"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "1000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "1600"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "1900"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "9000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_3> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "9300"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "9300"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_4> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "9650"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "8800"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_5> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "9200"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Oussama_Al-Roumani> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "6300"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_6> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "6800"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "7100"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "7500"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_8
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_8> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_8> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_8> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "4300"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_8> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "4800"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_9
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_9> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_9> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#PaidFor> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_9> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInEUR> "2100"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_9> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#CostInSYP> "2500"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Directs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Tewfik Saleh" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_7> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohammad_Malas> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration> "102"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre> "Documentary" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "The Dream" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear> "1987-09-23T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue> "8200000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dream> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber> "547055"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#AbdulRahaman_Alrahy> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Lotfi> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Mohamed_Kheir_Halouani> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tewfik_Saleh> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration> "120"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre> "Drama" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "The Dupes" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear> "1972-09-23T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue> "9600000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Dupes> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber> "3100561"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Asaad_Feddah> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Bassam_Kousa> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_13> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_14> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_15> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_16> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_17> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Abdellatif_Abdelhamid> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration> "120"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre> "Drama" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "The Night of the jackal" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue> "1200000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber> "790000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Adnan_Barakat> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Ayman_Zidan> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Jihad_Saad> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muna_Wassef> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Najah_Al_Abdullah> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_18> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_19> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_20> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_21> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_22> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_23> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_24> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Costs> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Payment_25> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#DirectedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Muhammed_Shahin> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration> "120"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre> "Drama" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre> "History" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "The Sun on a Cloudy Day" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear> "1985-09-03T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber> "580000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Night_Of_The_Jackal> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Female" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Tolay Haroon" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Tolay_Haroon> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Female" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Wafaa El Mowisly" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Wafaa_El_Mowisly> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ActsIn> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_Sun_On_a_Cloudy_Day> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Gender> "Male" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "Yusuf Hanna" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Yusuf_Hanna> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Nationality> "Syrian Nationality" .
+# 
+# http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I'd_Die_Twice_and_Love_You
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I'd_Die_Twice_and_Love_You> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I'd_Die_Twice_and_Love_You> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I'd_Die_Twice_and_Love_You> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProducedBy> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#The_General_Institute_of_Cinema> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I'd_Die_Twice_and_Love_You> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Duration> "120"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I'd_Die_Twice_and_Love_You> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Genre> "Comedy" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I'd_Die_Twice_and_Love_You> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Name> "I'd Die Twice and Love You" .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I'd_Die_Twice_and_Love_You> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ProductionYear> "1976-04-23T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I'd_Die_Twice_and_Love_You> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Revenue> "2600000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#I'd_Die_Twice_and_Love_You> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#ViewsNumber> "420000"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Producer> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Movie> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Director> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Audience> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/asus/ontologies/2024/3/SyrianCinemaData#Actor> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
